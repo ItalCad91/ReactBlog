@@ -1,14 +1,14 @@
-import Navbar from './Components/Navbar/Navbar'
-import AboutPage from './Components/AboutPage'
-import HomePage from './Components/HomePage'
-import ContactPage from './Components/ContactPage'
-import { Route, Routes } from "react-router-dom"
+import React from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import AboutPage from "./Components/AboutPage";
+import HomePage from "./Components/HomePage";
+import ContactPage from "./Components/ContactPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} index />
         <Route path="/Home" element={<HomePage />} />
@@ -19,4 +19,12 @@ function App() {
   );
 }
 
-export default App;
+function AppWithRouter() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
+
+export default AppWithRouter;
