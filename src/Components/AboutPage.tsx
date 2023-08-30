@@ -3,7 +3,6 @@ function AboutPage() {
   return (
   <body>    
 
-
 <div className="col-lg-8 mx-auto p-4 py-md-5">
   <header className="d-flex align-items-center pb-3 mb-5 border-bottom">
       <span className="fs-4" style={{fontWeight:"bold", color:"darkblue"}}>About RRSystems Blog</span>
