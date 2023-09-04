@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "react application",
   "main": "index.js",
-
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd BackEnd && node server.js"
+    "start": "cd BackEnd && node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
